@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'Almadinah3';
+    src: url('fonts/Almadinah3.otf') format('opentype'); /* Change 'truetype' to 'opentype' */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.image1 {
+    position: relative;
+    width: 100%;
+    height: 20%;
+}
+
+.section1 h2 {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 25px rgba(92, 74, 86, 0.30);
+    font-family: 'Almadinah3', sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 102.5%; /* 102.5px */
+}
+
+.section1 p {
+    position: absolute;
+    top: 70%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 25px rgba(92, 74, 86, 0.30);
+    font-family: 'Tajawal', sans-serif;
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 102.5%; /* 29.725px */
+}
+
+
+/*Styling section2*/
+.section2 {
+    padding: 0;
+    font-family: "Tajawal", sans-serif;
+    direction: rtl; /* Right-to-left text direction */
+    margin-top: 25px;
+    margin-right: 70px;
+  }
+  
+  .section2_item {
+    display: inline-block;
+  }
+  
+  .section2_item:not(:last-of-type)::after {
+    /*virtual element*/
+    content: ">";
+    margin: 0 5px;
+    color: rgba(92, 74, 86, 1);
+  }
+  
+  .section2_link {
+    text-decoration: none;
+    color: rgba(92, 74, 86, 1);
+  }
+  
+  .section2_link:hover {
+    text-decoration: underline;
+  }
+  
+  .section2_link--active {
+    color: rgba(92, 74, 86, 1);
+    font-weight: 700;
+  }
+
+  
+/*Styling section3*/
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 10px;
+    
+  }
+  
+  .section3-content {
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    margin-top: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .section3-image {
+    width: 100%;
+    height: auto;
+    bottom: 35px;
+    display: block;
+  }
+  
+  
+  
+  .section3-icons {
+    position: absolute;
+    top: 224px;
+    left: 40px;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .button {
+    background-color: rgba(126, 141, 107, 1); /* Green background */
+    border: none; /* No borders */
+    color: white; /* White text */
+    padding: 10px 13px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Make it inline element */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 15px; /* Rounded corners */
+    margin-top: 100%;
+  }
+  
+  .button:hover {
+    background-color: rgb(105, 117, 90); /* Darker background on hover */
+  }
+  
+  .button img {
+    display: block; /* Remove any default margin or padding on the image */
+    width: 35px; /* Adjust width as necessary */
+    height: 35px; /* Adjust height as necessary */
+  }
+  
+  .section3{
+    position: relative;
+    bottom: 10px;
+    right: 35px;
+    color: rgba(92, 74, 86, 1);
+    text-align: right;
+    padding: 2%;
+
+  }
+  
+  .section3 h3 {
+    font-size: 40px;
+    margin-bottom: -15px;
+    font-family: "Almadinah3";
+    
+  }
+  
+  .section3 p {
+    font-size: 16px;
+    font-family: "Tajawal", sans-serif;
+    margin-top: 1%;
+  }
+  
+  .content{
+    color: rgba(144, 152, 131, 1);
+    text-align: left; /* Align text to the left */
+    direction: rtl; /* Right-to-left text direction for Arabic */
+    display: block; /* Make it a block element to apply text alignment */
+    margin-left: 35px; /* Adjust as needed to position the link */
+    position: relative; /* Relative positioning to enable top offset */
+    top: -30px; /* Move up by 10px, adjust value as needed */
+    text-decoration: none;
+    
+  }
+  .content :hover {
+    text-decoration: underline;
+  }
+  
+  .section3 .read-more {
+    position: absolute;
+    bottom: 5px; /* Adjust this value to move the link up or down */
+    margin-right: 88%;
+    font-family: "Tajawal";
+    color: #909883;
+    font-size: 1.3vw; /* Responsive font size */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .section3 .read-more:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
