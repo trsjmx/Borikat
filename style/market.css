@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap');
+@font-face {
+    font-family: 'Almadinah3';
+    src: url('fonts/Almadinah3.otf') format('opentype'); /* Change 'truetype' to 'opentype' */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tajawal', sans-serif; 
+    direction: rtl; /* Right-to-left text direction */
+}
+
+.navbar {
+    background-color: #5C4A56;
+    padding: 20px;
+}
+
+.navbar-brand {
+    margin-right: 11vw; 
+}
+
+.navbar-nav .nav-link {
+    color: #FFFFFF;
+    margin-right: 40px; /* Increased margin between elements */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFFFFF;
+}
+
+
+.bg-red {
+    background-color: #7E8D6B;
+    color: #fff;
+}
+
+/* header */
+#header{
+    background: url(../images/shope.png) center top/130% auto no-repeat;
+    padding-bottom: 10%;
+}
+.carousel-item .btn{
+    border-color: #fff!important;
+}
+.carousel-item .btn:hover{
+    border-color: #fff!important;
+}
+
+.special-list{
+    margin-bottom: 10%;
+}
+
+/*Styling breadcrumbs*/
+.breadcrumbs {
+    padding: 0;
+    font-family: "Tajawal", sans-serif;
+    direction: rtl; /* Right-to-left text direction */
+    margin-right: 70px;
+  }
+  
+  .breadcrumbs_item {
+    display: inline-block;
+  }
+  
+  .breadcrumbs_item:not(:last-of-type)::after {
+    /*virtual element*/
+    content: ">";
+    margin: 0 5px;
+    color: rgba(92, 74, 86, 1);
+  }
+  
+  .breadcrumbs_link {
+    text-decoration: none;
+    color: rgba(92, 74, 86, 1);
+  }
+  
+  .breadcrumbs_link:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumbs_link--active {
+    color: rgba(92, 74, 86, 1);
+    font-weight: 700;
+  }
+  .title{
+    color: #5C4A56;
+  }
+
+/* special */
+.special-img span{
+    top: 20px;
+    right: 20px;
+}
+.special-list .btn{
+    padding: 8px 20px!important;
+    background-color: #7E8D6B;
+    border: none;
+}
+
+.special-list .btn:hover {
+    background-color: #c5d0b8;
+}
+.special-img img{
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.special-img:hover img{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.d-flex .btn:hover {
+    background-color: #c5d0b8 !important; /* Change button background color on hover */
+}

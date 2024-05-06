@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "Almadinah3";
+  src: url("Almadinah3.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  direction: rtl; /* Right-to-left text direction */
+}
+
+.banner.headerImg {
+  width: 100%;
+  height: 100%;
+}
+
+.headerImg {
+  position: absolute; /* Absolute position */
+  top: 17%; /* Push the image right under the navbar */
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure image covers the area */
+}
+
+.headerText {
+  position: absolute;
+  top: 55%;
+  right: 23%;
+  text-align: center;
+  transform: translateY(-50%);
+  text-shadow: rgba(92, 74, 86, 0.3) 0px 4px 25px;
+  color: #ffffff;
+  z-index: 2; /* Ensure text is above the gradient overlay */
+}
+
+.headerText h1,
+.headerText p {
+  margin: 0;
+  animation: slideInFromRight 1s ease-in-out forwards;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.headerText h1 {
+  font-size: 5vw; /* Responsive font size */
+  margin-bottom: 1px;
+  color: #fbfbfb;
+  font-family: "Almadinah3", sans-serif;
+  text-align: center;
+}
+
+.headerText p {
+  font-size: 1.85vw; /* Responsive font size */
+  width: 800px;
+  text-align: center;
+}
+
+/*Styling breadcrumbs*/
+.breadcrumbs {
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  direction: rtl; /* Right-to-left text direction */
+  margin-top: 40%;
+  margin-right: 70px;
+}
+
+.breadcrumbs_item {
+  display: inline-block;
+}
+
+.breadcrumbs_item:not(:last-of-type)::after {
+  /*virtual element*/
+  content: ">";
+  margin: 0 5px;
+  color: rgba(92, 74, 86, 1);
+}
+
+.breadcrumbs_link {
+  text-decoration: none;
+  color: rgba(92, 74, 86, 1);
+}
+
+.breadcrumbs_link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs_link--active {
+  color: rgba(92, 74, 86, 1);
+  font-weight: 700;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+.card1 {
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  margin-top: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card1-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card1:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 50px -12px;
+}
+
+.card1-icons {
+  position: absolute;
+  top: 224px;
+  left: 40px;
+  display: flex;
+  gap: 8px;
+  margin-top: 7%;
+}
+
+.button {
+  background-color: rgba(126, 141, 107, 1); /* Green background */
+  border: none; /* No borders */
+  color: white; /* White text */
+  padding: 10px 13px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Make it inline element */
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 15px; /* Rounded corners */
+}
+
+.button:hover {
+  background-color: rgb(105, 117, 90); /* Darker background on hover */
+}
+
+.button img {
+  display: block; /* Remove any default margin or padding on the image */
+  width: 35px; /* Adjust width as necessary */
+  height: 35px; /* Adjust height as necessary */
+}
+
+.card-description {
+  position: relative;
+  bottom: 10px;
+  right: 35px;
+  color: rgba(92, 74, 86, 1);
+  text-align: right;
+  padding: 2%;
+}
+
+.card-description h2 {
+  font-size: 40px;
+  margin-bottom: -15px;
+  font-family: "Almadinah3";
+}
+
+.card-description p {
+  font-size: 16px;
+  font-family: "Tajawal", sans-serif;
+  margin-top:1%;
+}
+
+.description {
+  color: rgba(144, 152, 131, 1);
+  text-align: left; /* Align text to the left */
+  direction: rtl; /* Right-to-left text direction for Arabic */
+  display: block; /* Make it a block element to apply text alignment */
+  margin-left: 35px; /* Adjust as needed to position the link */
+  position: relative; /* Relative positioning to enable top offset */
+  top: -30px; /* Move up by 10px, adjust value as needed */
+  text-decoration: none;
+}
+.description :hover {
+  text-decoration: underline;
+}
+
+.card-description .read-more {
+  position: absolute;
+  bottom: 5px; /* Adjust this value to move the link up or down */
+  margin-right: 88%;
+  font-family: "Tajawal";
+  color: #909883;
+  font-size: 1vw; /* Responsive font size */
+  text-decoration: none; /* Remove underline */
+}
+
+.card-description .read-more:hover {
+  text-decoration: underline; /* Underline on hover */
+}

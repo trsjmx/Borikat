@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "Almadinah3";
+  src: url("Almadinah3.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  direction: rtl; /* Right-to-left text direction */
+}
+
+
+.banner.Img {
+  width: 100%;
+  height: 100%;
+}
+
+.headerImg {
+
+  position: absolute; 
+  top: 17%; /* Push the image right under the navbar */
+  width: 100%;
+  height: 80% ; /* Maintain aspect ratio */
+  object-fit: cover ; /* Ensure image covers the area */
+  object-position: 0px 30%;
+  
+  
+}
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*Styling breadcrumbs*/
+.breadcrumbs {
+  padding: 50;
+  font-family: "Tajawal", sans-serif;
+  direction: rtl; /* Right-to-left text direction */
+  margin-top: 590px;
+  margin-right: 70px;
+}
+
+.breadcrumbs_item {
+  display: inline-block;
+}
+
+.breadcrumbs_item:not(:last-of-type)::after {
+  /*virtual element*/
+  content: ">";
+  margin: 0 5px;
+  color: rgba(92, 74, 86, 1);
+}
+
+.breadcrumbs_link {
+  text-decoration: none;
+  color: rgba(92, 74, 86, 1);
+}
+
+.breadcrumbs_link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs_link--active {
+  color: rgba(92, 74, 86, 1);
+  font-weight: 700;
+}
+
+.Restaurant {
+  background-color: rgba(92, 74, 86, 0.08);
+  position: relative; /* This ensures that the absolute positioning of children is relative to this container */
+  overflow: hidden;
+  margin: 0px auto;
+  margin-top: 25px;
+}
+.Quba-icons {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  display: flex;
+  gap: 7px;
+}
+
+.button {
+  background-color: rgba(126, 141, 107, 1); /* Green background */
+  border: none; /* No borders */
+  color: white; /* White text */
+  padding: 10px 13px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Make it inline element */
+  margin: 4px 2px; /* Some margin */
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 15px; /* Rounded corners */
+}
+
+.button:hover {
+  background-color: rgb(105, 117, 90); /* Darker background on hover */
+}
+
+.button img {
+  display: block; /* Remove any default margin or padding on the image */
+  width: 25px; /* Adjust width as necessary */
+  height: 30px; /* Adjust height as necessary */
+}
+
+.Restaurant-description {
+  position: relative;
+  top: -15px;
+  bottom: 0px;
+  right: 100px;
+  color: rgba(92, 74, 86, 1);
+  text-align: right;
+}
+
+.Restaurant-description h1 {
+  font-size: 50px;
+  margin-bottom: -20px;
+  font-family: "Almadinah3";
+}
+.Restaurant-description p {
+  font-size: 20px;
+  font-family: "Tajawal", sans-serif;
+}
+
+.Restaurant-pragraph {
+  position: absolute;
+  font-family: "Tajawal", sans-serif; /* Use the Tajawal font family */
+  color: rgba(
+    92,
+    74,
+    86,
+    1
+  ); /* Set the text color; adjust the color code as needed */
+  font-size: 1rem; /* Set the base font size */
+  line-height: 1.6; /* Set line height for readability */
+  margin: 0px 0; /* Add some margin on top and bottom of the paragraph */
+  padding: 10px 100px; /* Some padding */
+}
+
+.Restaurant-pragraph h1 {
+  margin-bottom: -18px;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700; /* Make the headers bold */
+  font-size: 1.6rem; /* Larger font size for headings */
+  color: rgba(92, 74, 86, 1);
+}
+
+.Restaurant-pragraph p {
+  margin: 20px 2px;
+  text-align: justify;
+  font-size: 1.3vw;
+  font-weight: 400;
+}
+
+.reviews{
+ position: revert;
+}

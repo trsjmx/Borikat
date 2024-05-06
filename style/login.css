@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'Almadinah3';
+    src: url('fonts/Almadinah3.otf') format('truetype');     
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden; /* Disable vertical scrolling */
+
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Set container height to viewport height */
+
+}
+
+.image-container {
+    flex: 1;
+    position:absolute; /* Ensure relative positioning for absolute positioning within */
+
+}
+
+.image-container img {
+    width: 33.5%;
+    height:auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33.5%; /* Set width to match the image width */
+    height: 100%; /* Set height to match the image height */
+    background-color: rgba(92, 74, 86, 0.6); 
+}
+
+.overlay-text {
+    position: absolute;
+    top: 45%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    text-align: center;
+    color: white;
+    font-family: 'Almadinah3', sans-serif; 
+    font-size: 2vw;
+    text-shadow:0 4px 25px rgba(92, 74, 86, 0.3);
+}
+
+.overlay-text h1 {
+    font-size: 3.4vw; 
+
+}
+
+.overlay-text img {
+    width:50%; 
+    height: auto;
+    margin-bottom: 30px; 
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    text-align: right; /* Right-align text */  
+    margin-right: 150px;
+    margin-top: 70px;
+}
+
+.signup-form {
+    padding: 20px;
+    direction: rtl; 
+    width: 100%;
+    z-index: 1; /* Ensure the form is above the image container */
+    position: relative; 
+}
+
+.signup-form h2 {
+    font-family: 'Tajawal', sans-serif;
+    color: #5C4A56;
+    text-align: right;
+    margin-bottom: 20px;
+    margin-top: 3%;
+    font-size: 24px;
+}
+
+.signup-form p{
+    font-family: 'Tajawal', sans-serif;
+    color: #B7A8B2;
+    text-align: right;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+.signup-form hr{
+    border: 1px solid #F5F5F5;
+    margin-left: 53%;
+    margin-bottom: 30px;
+
+}
+.signup-form label{
+    font-family:'Tajawal', sans-serif;
+    text-align: right;
+    color: #5C4A56;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"]{
+    font-family: 'Tajawal', sans-serif;
+    text-align: right;
+    width: 45%;
+    display: block;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #B7A8B2;
+    border-radius: 5px;
+}
+
+.signup-form input[type="text"]:focus,
+.signup-form input[type="email"]:focus,
+.signup-form input[type="password"]:focus {
+    border-color: #a4969f;
+    box-shadow:0 4px 20px rgba(92, 74, 86, 0.3);
+}
+
+.signup-form button {
+    font-family: 'Tajawal', sans-serif;
+    width: 47.3%;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #7E8D6B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #aebd9b;
+}
+
+.forgot-password {
+    font-family: 'Tajawal', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.forgot-password a {
+    color: #5C4A56;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    color: #7E8D6B;
+}
+
+
+.new-user-link{
+    color: #5C4A56;
+    text-decoration: none;
+}
+.new-user-link a{
+    color: #5C4A56;
+    text-decoration: none;
+}
+
+.new-user-link a:hover {
+    color: #7E8D6B;
+}
+
+.error {
+    color: rgb(231, 59, 59);
+    font-size: 14px;
+    margin-top: 4px;
+    font-family: 'Tajawal', sans-serif;
+    display: block;
+}
